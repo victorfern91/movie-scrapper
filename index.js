@@ -1,7 +1,7 @@
-const API = require('./api');
+const YifyAPI = require('./yifyAPI');
 
-const yifyAPI = new API('https', 'yts.ag');
+const yifyAPI = new YifyAPI();
 
-yifyAPI.get('/api/v2/list_msssovies.json')
+yifyAPI.getMovieList()
     .then(console.log)
     .catch(console.err);
