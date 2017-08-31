@@ -1,7 +1,7 @@
-const YifyAPI = require('./yifyAPI');
+const YifyAPIConnector = require('./yifyAPI');
 
-const yifyAPI = new YifyAPI();
+const yifyAPIConnector = new YifyAPIConnector();
 
-yifyAPI.getMovieList()
+yifyAPIConnector.getMovieInfo('tt0133093')
     .then(console.log)
     .catch(console.err);
