@@ -1,0 +1,23 @@
+{
+  "name": "imdb-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorfern91/movie-scrapper.git"
+  },
+  "author": "Victor Fernandes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victorfern91/movie-scrapper/issues"
+  },
+  "homepage": "https://github.com/victorfern91/movie-scrapper#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.7.2"
+  }
+}

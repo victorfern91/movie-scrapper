@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const { isString, isObject } = require('lodash');
 
 /**
  * 
@@ -11,13 +12,13 @@ function getQueryUrl(params) {
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(params[key]))
     .join('&');
 
-    return queryString.length > 0  ? `?${queryString}` : ''; 
+    return isString(queryString)  ? `?${queryString}` : ''; 
 }
 
 async function request(url, params) {
     let path = url;
     try {
-        if (params.method === 'GET' && params.data) {
+        if (params.method === 'GET' && isObject(params.data)) {
             path += getQueryUrl(params.data)
         }
         const response = await fetch(path);
