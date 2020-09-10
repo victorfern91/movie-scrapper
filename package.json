@@ -18,6 +18,6 @@
   "homepage": "https://github.com/victorfern91/movie-scrapper#readme",
   "dependencies": {
     "lodash": "^4.17.4",
-    "node-fetch": "^1.7.2"
+    "node-fetch": "^2.6.1"
   }
 }
